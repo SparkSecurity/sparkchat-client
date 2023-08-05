@@ -1,0 +1,17 @@
+{
+  "name": "sparkchat-client",
+  "version": "1.0.1",
+  "description": "SparkChat Client",
+  "license": "MIT",
+  "author": {
+    "name": "Spark Security",
+    "url": "https://github.com/SparkSecurity"
+  },
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
+  },
+  "dependencies": {}
+}
