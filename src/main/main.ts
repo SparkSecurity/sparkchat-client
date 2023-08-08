@@ -14,7 +14,6 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
-const child_process = require('child_process')
 class AppUpdater {
   constructor() {
     log.transports.file.level = 'info';

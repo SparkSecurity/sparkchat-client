@@ -1,10 +1,11 @@
-import { createSlice, configureStore, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '.';
 
 export interface Context {
   backendURL: string
   userID: string
   name: string
+  imageURL: string
 }
 export interface ContextState {
   contexts: Context[]
